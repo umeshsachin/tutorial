@@ -52,6 +52,13 @@ app.get('/about',(req,res)=>{
 
 });
 
+app.get('/projects',(req,res)=>{
+    res.render('projects.hbs',{
+        pagetitle:'Welcome to Projects',
+        message:'still under developement'
+    });
+});
+
 app.get('/bad',(req,res)=>{
     res.send({errormsg:'error occured'});
 })
